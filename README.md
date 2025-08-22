@@ -154,10 +154,3 @@ curl -s -X POST http://localhost:5000/api/user/nickname   -H "Authorization: Bea
 | GET   | `/api/diag/claims`   | (opt) | –                         | 실제 인증 결과/실패 사유 |
 
 ---
-
-## 📄 라이선스
-프로젝트 요구에 맞게 라이선스를 추가하세요. (예: MIT)
-
-<p align="center">
-  <sub>Made with ❤️ — MysteryBox</sub>
-</p>
