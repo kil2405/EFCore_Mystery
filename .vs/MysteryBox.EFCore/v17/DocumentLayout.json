@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WorkSpace\\EFCore_Mystery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\services\\jwtkeyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\services\\jwtkeyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:49:45.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAwDsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:17:00.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:15:14.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DebugController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:15:05.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CorsDebugController.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:15:04.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Program.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Program.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:13:05.137Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtKeyProvider.cs",
+              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
+              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
+              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
+              "RelativeToolTip": "src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T08:49:44.836Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

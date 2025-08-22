@@ -1,6 +1,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 
 namespace MysteryBox.Api.Services;
 
@@ -41,4 +42,7 @@ public class JwtTokenService
         var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
         return new TokenResult(tokenString, jti, expUtc);
     }
+
+    public string CreateRefreshToken(int size = 32)
+      => Convert.ToBase64String(RandomNumberGenerator.GetBytes(size));
 }
