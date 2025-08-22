@@ -1,0 +1,10 @@
+USE mysterybox;
+
+DROP TABLE IF EXISTS `tb_global_ranking`;
+CREATE TABLE `tb_global_ranking` (
+  `region` VARCHAR(8) NOT NULL COMMENT '국가 코드 (ex : KR, EN)',
+  `count` BIGINT(20) NOT NULL COMMENT '클릭 카운트',
+  `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '최근 업데이트 시간',
+  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '최초 생성 시간',
+  PRIMARY KEY (`region`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COMMENT='국가별 랭킹';
