@@ -16,12 +16,13 @@ builder.Services.AddControllers().AddJsonOptions(o =>
     o.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
 
+// 1) 연결문자열 결정 (환경변수 → ConnectionStrings)
 string? conn =
-    builder.Configuration["EFCORE_CONNECTION"] // ① dotnet-ef에서 넘길 용도 (key 단독)
-    ?? builder.Configuration.GetConnectionString("DefaultConnection") // ② 보편 키
+    builder.Configuration["EFCORE_CONNECTION"] // ① dotnet-ef나 docker에서 주입
+    ?? builder.Configuration.GetConnectionString("DefaultConnection") // ② 일반 키
     ?? builder.Configuration.GetConnectionString("Default")           // ③ 백업 키
-    ?? builder.Configuration["ConnectionStrings:DefaultConnection"]   // ④ 평문 키
-    ?? builder.Configuration["ConnectionStrings:Default"];            // ⑤ 백업 키
+    ?? builder.Configuration["ConnectionStrings:DefaultConnection"]   // ④ 평문
+    ?? builder.Configuration["ConnectionStrings:Default"];            // ⑤ 평문 백업
 
 if (string.IsNullOrWhiteSpace(conn))
 {
@@ -29,11 +30,16 @@ if (string.IsNullOrWhiteSpace(conn))
         "No connection string found. Set EFCORE_CONNECTION or ConnectionStrings:DefaultConnection.");
 }
 
-// 2) DbContext 등록 (Pomelo MySQL)
+// 2) DbContext 등록 (Pomelo + MySQL 8.0 고정)
+//  - AutoDetect는 디자인타임에 실제 접속을 시도하므로 고정 버전 권장
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 36)); // 사용중 8.0.x로 맞춰도 됨
+
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
-    opt.UseMySql(conn, ServerVersion.AutoDetect(conn),
-        o => o.EnableRetryOnFailure());
+    opt.UseMySql(conn, serverVersion, my =>
+    {
+      my.EnableRetryOnFailure();
+    });
 });
 
 builder.Services.AddControllers();
