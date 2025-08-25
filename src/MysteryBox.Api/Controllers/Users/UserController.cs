@@ -82,7 +82,6 @@ public class UserController : ControllerBase
         if(!string.Equals(currentRt, req.refreshToken, StringComparison.Ordinal))
           return Unauthorized(); // 재사용, 탈취, 오래된 RT
 
-
         var user = await _db.Users.FindAsync(userId);
         if(user is null) return Unauthorized();
 
@@ -138,6 +137,4 @@ public class UserController : ControllerBase
         await _db.SaveChangesAsync();
         return Ok(new { user.Id, user.TermsAgree });
     }
-
-
 }

@@ -16,6 +16,28 @@ builder.Services.AddControllers().AddJsonOptions(o =>
     o.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
 
+string? conn =
+    builder.Configuration["EFCORE_CONNECTION"] // ① dotnet-ef에서 넘길 용도 (key 단독)
+    ?? builder.Configuration.GetConnectionString("DefaultConnection") // ② 보편 키
+    ?? builder.Configuration.GetConnectionString("Default")           // ③ 백업 키
+    ?? builder.Configuration["ConnectionStrings:DefaultConnection"]   // ④ 평문 키
+    ?? builder.Configuration["ConnectionStrings:Default"];            // ⑤ 백업 키
+
+if (string.IsNullOrWhiteSpace(conn))
+{
+    throw new InvalidOperationException(
+        "No connection string found. Set EFCORE_CONNECTION or ConnectionStrings:DefaultConnection.");
+}
+
+// 2) DbContext 등록 (Pomelo MySQL)
+builder.Services.AddDbContext<AppDbContext>(opt =>
+{
+    opt.UseMySql(conn, ServerVersion.AutoDetect(conn),
+        o => o.EnableRetryOnFailure());
+});
+
+builder.Services.AddControllers();
+
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
