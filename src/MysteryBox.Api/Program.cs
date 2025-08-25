@@ -71,12 +71,6 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// MySQL
-var connStr = builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? "Server=localhost;Database=mysterybox;User=root;Password=yourpassword;TreatTinyAsBoolean=false;";
-builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseMySql(connStr, ServerVersion.AutoDetect(connStr)));
-
 // App services
 builder.Services.AddSingleton<RedisService>();
 builder.Services.AddSingleton<JwtTokenService>();
