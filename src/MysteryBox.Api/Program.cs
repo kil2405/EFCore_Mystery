@@ -38,7 +38,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseMySql(conn, serverVersion, my =>
     {
-      my.EnableRetryOnFailure();
+        my.EnableRetryOnFailure();
     });
 });
 
@@ -201,5 +201,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// 헬스체크용 get method 추가
+app.MapGet("/healthz", () => Results.Ok("OK"));
 
 app.Run();
