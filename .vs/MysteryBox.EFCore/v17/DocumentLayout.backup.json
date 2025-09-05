@@ -3,60 +3,52 @@
   "WorkspaceRootPath": "D:\\WorkSpace\\EFCore_Mystery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\rank\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\rank\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\services\\jwtkeyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\services\\jwtkeyprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\dtos\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\dtos\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\debugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\debug\\corsdebugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\rank\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|solutionrelative:src\\mysterybox.api\\controllers\\rank\\rankingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{230536E6-EB3A-4462-803F-ECE9D3D7F26F}|src\\MysteryBox.Api\\MysteryBox.Api.csproj|d:\\workspace\\efcore_mystery\\src\\mysterybox.api\\controllers\\debug\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,76 +62,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Request.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\DTOs\\Request.cs",
-              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\DTOs\\Request.cs",
-              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\DTOs\\Request.cs",
-              "RelativeToolTip": "src\\MysteryBox.Api\\DTOs\\Request.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T11:12:44.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Response.cs",
-              "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\DTOs\\Response.cs",
-              "RelativeDocumentMoniker": "src\\MysteryBox.Api\\DTOs\\Response.cs",
-              "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\DTOs\\Response.cs",
-              "RelativeToolTip": "src\\MysteryBox.Api\\DTOs\\Response.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T10:35:58.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
               "RelativeToolTip": "src\\MysteryBox.Api\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-22T08:49:45.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
               "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Users\\UserController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwHQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA0wCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:17:00.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T08:17:00.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Program.cs",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Program.cs",
               "RelativeToolTip": "src\\MysteryBox.Api\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-22T08:13:05.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "CorsDebugController.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
@@ -147,21 +112,19 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\CorsDebugController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:15:04.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T08:15:04.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "DebugController.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
               "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\DebugController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:15:05.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T08:15:05.797Z"
             },
             {
               "$type": "Document",
@@ -173,12 +136,11 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T11:12:51.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T11:12:51.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "RankingController.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Rank\\RankingController.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Rank\\RankingController.cs",
@@ -186,12 +148,11 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Rank\\RankingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T11:19:40.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T11:19:40.828Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "ErrorController.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
@@ -199,31 +160,33 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\Controllers\\Debug\\ErrorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:15:14.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T08:15:14.418Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\appsettings.Production.json",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\appsettings.Production.json",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\appsettings.Production.json",
               "RelativeToolTip": "src\\MysteryBox.Api\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-25T17:59:55.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T17:59:55.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\appsettings.Development.json",
@@ -231,12 +194,11 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-25T17:58:48.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T17:58:48.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "DesignTimeDbContextFactory.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Data\\DesignTimeDbContextFactory.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Data\\DesignTimeDbContextFactory.cs",
@@ -244,31 +206,29 @@
               "RelativeToolTip": "src\\MysteryBox.Api\\Data\\DesignTimeDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T11:14:38.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T11:14:38.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "JwtKeyProvider.cs",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
               "RelativeToolTip": "src\\MysteryBox.Api\\Services\\JwtKeyProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T08:49:44.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T08:49:44.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\appsettings.json",
               "RelativeDocumentMoniker": "src\\MysteryBox.Api\\appsettings.json",
               "ToolTip": "D:\\WorkSpace\\EFCore_Mystery\\src\\MysteryBox.Api\\appsettings.json",
               "RelativeToolTip": "src\\MysteryBox.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-22T11:15:18.026Z",
               "EditorCaption": ""
