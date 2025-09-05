@@ -1,0 +1,53 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ef-migrate
+  namespace: webapp
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: migrator
+          image: mcr.microsoft.com/dotnet/sdk:8.0
+          env:
+            - name: EFCORE_CONNECTION
+              value: "Server=mysql;Port=3306;Database=mysterybox;User=root;Password=test123#;TreatTinyAsBoolean=false;AllowPublicKeyRetrieval=True;SslMode=None;"
+          command: ["bash", "-lc"]
+          args:
+            - |
+              set -e
+              apt-get update >/dev/null
+              apt-get install -y --no-install-recommends default-mysql-client ca-certificates git >/dev/null
+
+              # DB 준비 대기
+              until mysqladmin ping -h mysql -uroot -p'test123#' --silent; do echo "waiting mysql"; sleep 2; done
+              echo "mysqld is alive"
+
+              # 소스 가져오기
+              rm -rf /tmp/src && git clone --depth 1 https://github.com/kil2405/EFCore_Mystery.git /tmp/src
+
+              # (1) 디자인타임 팩토리 제거: 있으면 디자인타임 경로가 꼬임
+              find /tmp/src -type f -iname "*DesignTime*Factory*.cs" -exec rm -f {} \; || true
+
+              # (2) 설정 파일의 DB 호스트 교정: 127.0.0.1 -> mysql
+              sed -i 's/Server=127\.0\.0\.1/Server=mysql/g' /tmp/src/src/MysteryBox.Api/appsettings*.json || true
+
+              # (3) AutoDetect 제거: 버전 고정(디자인타임 접속 방지)
+              sed -i 's/ServerVersion\.AutoDetect(conn)/new MySqlServerVersion(new Version(8,0,36))/g' /tmp/src/src/MysteryBox.Api/Program.cs || true
+
+              # EF 도구
+              dotnet tool install --global dotnet-ef --version 8.* >/dev/null || true
+              export PATH="$PATH:/root/.dotnet/tools"
+
+              # 빌드
+              dotnet restore /tmp/src/src/MysteryBox.Api/MysteryBox.Api.csproj
+              dotnet build   /tmp/src/src/MysteryBox.Api/MysteryBox.Api.csproj -c Release
+
+              # (4) 연결문자열을 명시해 마이그레이션 수행
+              dotnet-ef database update \
+                --project /tmp/src/src/MysteryBox.Api/MysteryBox.Api.csproj \
+                --startup-project /tmp/src/src/MysteryBox.Api/MysteryBox.Api.csproj \
+                --context MysteryBox.Api.Data.AppDbContext \
+                --connection "$EFCORE_CONNECTION"

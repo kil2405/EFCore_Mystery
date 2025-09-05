@@ -1,0 +1,252 @@
+# 01-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webapp
+---
+# 02-secrets-config.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-secret
+  namespace: webapp
+type: Opaque
+stringData:
+  mysql-root-password: "test123#"
+  mysql-app-user: "app"
+  mysql-app-password: "apppass"
+  mysql-database: "mysterybox"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: webapp
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  DOTNET_ENVIRONMENT: "Production"
+  REDIS__CONNECTIONSTRING: "redis:6379"
+  # ⛳️ ConnectionStrings__DefaultConnection은 Deployment에서 Secret 기반 env로 조합합니다.
+---
+# 03-mysql.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+  namespace: webapp
+spec:
+  ports:
+    - name: mysql
+      port: 3306
+      targetPort: 3306
+  selector:
+    app: mysql
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+  namespace: webapp
+spec:
+  serviceName: mysql
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:8.0
+          args: ["mysqld","--default-authentication-plugin=mysql_native_password"]
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-root-password
+            - name: MYSQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-database
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-app-user
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-app-password
+          ports:
+            - containerPort: 3306
+          readinessProbe:
+            tcpSocket:
+              port: 3306
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          livenessProbe:
+            exec:
+              command: ["/bin/sh","-c","mysqladmin ping -h 127.0.0.1 -u$MYSQL_USER -p$MYSQL_PASSWORD --silent"]
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/mysql
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 10Gi
+---
+# 04-redis.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: webapp
+spec:
+  ports:
+    - name: redis
+      port: 6379
+      targetPort: 6379
+  selector:
+    app: redis
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+        - name: redis
+          image: redis:7
+          ports:
+            - containerPort: 6379
+          readinessProbe:
+            exec:
+              command: ["redis-cli","ping"]
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            tcpSocket:
+              port: 6379
+            initialDelaySeconds: 15
+            periodSeconds: 10
+---
+# 05-app.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-svc
+  namespace: webapp
+spec:
+  selector:
+    app: app
+  ports:
+    - name: http
+      port: 5000
+      targetPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  namespace: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      # 이미지가 private이면 아래 주석 해제하고 regcred 이름을 맞추세요.
+      # imagePullSecrets:
+      #   - name: regcred
+      containers:
+        - name: app
+          image: kil2405/dg-test:v2
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: app-config
+          env:
+            # Secret → 변수로 가져오기
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-app-user
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-app-password
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: mysql-database
+            # 최종 ConnectionString 조립
+            - name: ConnectionStrings__DefaultConnection
+              value: "Server=mysql;Port=3306;Database=$(DB_NAME);User=$(DB_USER);Password=$(DB_PASSWORD);TreatTinyAsBoolean=false;AllowPublicKeyRetrieval=True;SslMode=None;"
+            - name: ASPNETCORE_URLS
+              value: "http://0.0.0.0:5000"
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 6
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 5000
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 6
+---
+# 06-ingress.yaml (Traefik; host 없이 기본 경로 라우팅)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ing
+  namespace: webapp
+spec:
+  ingressClassName: traefik
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app-svc
+                port:
+                  number: 5000
