@@ -1,0 +1,39 @@
+# VCS / CI
+.git
+.gitignore
+.gitattributes
+.github
+
+# IDE / OS
+.vs
+.vscode
+.idea
+*.user
+*.suo
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Build outputs
+**/bin/
+**/obj/
+**/out/
+TestResults/
+.coverage
+*.nupkg
+
+# Node / Front (있다면)
+node_modules/
+dist/
+build/
+
+# Docker & K8s 등 배포 템플릿
+docker-compose.yml
+compose*.yml
+**/docker/
+**/k8s/
+*.md
+
+# Secrets(예: 로컬 개발 전용). 실제로 빌드에 필요하면 주석 처리하세요.
+# appsettings.Development.json
+# .env
