@@ -52,7 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
-*.db
+# SQLite temp files only (keep .db for sync)
 *.db-shm
 *.db-wal
 *.vsidx
